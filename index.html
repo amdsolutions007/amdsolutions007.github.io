@@ -3,403 +3,266 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AMD Media Solutions - AI Engineering Division. Building Intelligence for the African Ecosystem.">
-    <meta name="keywords" content="AI, Nigeria, Africa, Crypto, Automation, GitHub, Machine Learning">
-    <meta name="author" content="Olawale Shoyemi - AMD Solutions">
-    <title>AMD Media Solutions - AI Engineering Division</title>
-    
-    <!-- Tailwind CSS CDN -->
+    <meta name="description" content="AMD Solutions 007 Portfolio - Black & Gold Ops">
+    <title>AMD Solutions 007 | Black & Gold Ops</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Custom Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
-        
-        body {
-            font-family: 'Inter', sans-serif;
+        :root {
+            --gold: #facc15;
+            --gold-strong: #eab308;
+            --ink: #0b0b0f;
+            --panel: #111118;
+            --muted: #9ca3af;
         }
-        
-        .gradient-bg {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
-        
-        .gradient-text {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        
-        .card-hover {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .card-hover:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-        }
-        
-        .glow {
-            box-shadow: 0 0 20px rgba(102, 126, 234, 0.5);
-        }
+        body { font-family: 'Inter', sans-serif; background: var(--ink); color: #e5e7eb; }
+        .glass { background: rgba(17, 17, 24, 0.8); backdrop-filter: blur(10px); border: 1px solid rgba(250, 204, 21, 0.08); }
+        .shine { position: relative; overflow: hidden; }
+        .shine::after { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 20% 20%, rgba(250, 204, 21, 0.08), transparent 40%); pointer-events: none; }
+        .badge { background: rgba(250, 204, 21, 0.08); color: var(--gold); border: 1px solid rgba(250, 204, 21, 0.2); }
+        .pill { background: rgba(148, 163, 184, 0.1); color: var(--muted); border: 1px solid rgba(148, 163, 184, 0.2); }
+        .link { color: var(--gold); transition: color 0.2s ease, transform 0.2s ease; }
+        .link:hover { color: #fde047; transform: translateY(-1px); }
+        .cta { background: linear-gradient(120deg, #facc15, #eab308); color: #0f172a; box-shadow: 0 15px 40px rgba(250, 204, 21, 0.25); }
+        .cta:hover { filter: brightness(1.05); }
+        .grid-card { transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease; border: 1px solid rgba(250, 204, 21, 0.08); }
+        .grid-card:hover { transform: translateY(-6px); border-color: rgba(250, 204, 21, 0.35); box-shadow: 0 20px 35px rgba(0,0,0,0.35); }
     </style>
 </head>
-<body class="bg-gray-50">
-    <!-- Header -->
-    <header class="gradient-bg text-white shadow-lg">
-        <nav class="container mx-auto px-6 py-6">
-            <div class="flex items-center justify-between">
+<body>
+    <div class="min-h-screen">
+        <header class="border-b border-[rgba(250,204,21,0.08)] bg-[rgba(10,10,12,0.7)] backdrop-blur">
+            <div class="max-w-6xl mx-auto px-6 py-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                 <div>
-                    <h1 class="text-3xl font-bold">AMD Media Solutions</h1>
-                    <p class="text-sm opacity-90 mt-1">AI Engineering Division</p>
+                    <p class="text-sm uppercase tracking-[0.25em] text-[var(--gold)]">Black & Gold Ops</p>
+                    <h1 class="text-2xl font-semibold text-white">AMD Solutions 007 · AI Engineering</h1>
                 </div>
-                <div class="flex space-x-4">
-                    <a href="https://github.com/amdsolutions007" target="_blank" class="hover:scale-110 transition-transform">
-                        <i class="fab fa-github text-2xl"></i>
-                    </a>
-                    <a href="https://twitter.com/amdsolutions007" target="_blank" class="hover:scale-110 transition-transform">
-                        <i class="fab fa-twitter text-2xl"></i>
-                    </a>
-                    <a href="https://linkedin.com/company/amd-solutions" target="_blank" class="hover:scale-110 transition-transform">
-                        <i class="fab fa-linkedin text-2xl"></i>
-                    </a>
+                <div class="flex items-center gap-3 text-sm text-[var(--muted)]">
+                    <a class="link" href="https://www.amdsolutions007.com" target="_blank" rel="noreferrer">Vercel Site</a>
+                    <span class="text-[rgba(148,163,184,0.3)]">|</span>
+                    <a class="link" href="https://github.com/amdsolutions007" target="_blank" rel="noreferrer">GitHub</a>
+                    <span class="text-[rgba(148,163,184,0.3)]">|</span>
+                    <a class="link" href="mailto:hello@amdsolutions007.com">Contact</a>
                 </div>
             </div>
-        </nav>
-    </header>
+        </header>
 
-    <!-- Hero Section -->
-    
-
-            <!-- Project 12: Address-Intel -->
-            <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
-                <div class="text-5xl mb-4">🗺️</div>
-                <h3 class="text-2xl font-bold mb-3">Address-Intel</h3>
-                <p class="text-gray-600 mb-6">
-                    AI-powered parser for unstructured Nigerian addresses. Turn "behind yellow shop" into valid shipping data with geospatial intelligence.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-6">
-                    <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-semibold">Python</span>
-                    <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold">NLP</span>
-                    <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-semibold">Geospatial AI</span>
+        <main class="max-w-6xl mx-auto px-6 pb-20">
+            <section class="py-14 flex flex-col lg:flex-row gap-10 items-start">
+                <div class="flex-1 space-y-6">
+                    <div class="badge inline-flex items-center px-3 py-1 rounded-full text-xs tracking-wide uppercase">Africa-first AI • 007 Identity</div>
+                    <h2 class="text-4xl md:text-5xl font-extrabold leading-tight text-white">
+                        Intelligence, automation, and data systems for the African operator.
+                    </h2>
+                    <p class="text-lg text-[var(--muted)] max-w-3xl">
+                        We ship black-ops grade tooling: compliance copilots, fintech parsers, address intelligence, and growth automation. Same 007 identity across Vercel and GitHub Pages.
+                    </p>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="pill px-3 py-1 rounded-full text-sm">LLM & Speech</span>
+                        <span class="pill px-3 py-1 rounded-full text-sm">Geospatial</span>
+                        <span class="pill px-3 py-1 rounded-full text-sm">Fintech</span>
+                        <span class="pill px-3 py-1 rounded-full text-sm">DevOps</span>
+                    </div>
+                    <div class="flex flex-wrap gap-4 pt-2">
+                        <a class="cta px-5 py-3 rounded-lg font-semibold inline-flex items-center" href="#featured">View Arsenal</a>
+                        <a class="link inline-flex items-center gap-2 font-semibold" href="https://github.com/amdsolutions007" target="_blank" rel="noreferrer">
+                            GitHub Universe <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
                 </div>
-                <a href="https://github.com/amdsolutions007/Address-Intel" target="_blank"
-                   class="inline-flex items-center text-purple-600 font-semibold hover:text-purple-800">
-                    View on GitHub <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
-
-            <!-- Project 13: Bank-Statement-Parser -->
-            <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
-                <div class="text-5xl mb-4">🔍</div>
-                <h3 class="text-2xl font-bold mb-3">Bank-Statement-Parser</h3>
-                <p class="text-gray-600 mb-6">
-                    AI-powered bank statement parser for Nigerian banks. Extract transactions from PDFs instantly with intelligent OCR and data validation.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-6">
-                    <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-semibold">Python</span>
-                    <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold">PDF Processing</span>
-                    <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-semibold">AI</span>
+                <div class="w-full lg:w-[340px] glass rounded-2xl p-6 shine">
+                    <div class="text-sm text-[var(--muted)] mb-3">Signal</div>
+                    <div class="space-y-3 text-sm">
+                        <div class="flex justify-between"><span class="text-white">Deployments</span><span class="text-[var(--gold)]">Vercel + Pages</span></div>
+                        <div class="flex justify-between"><span class="text-white">Repos</span><span class="text-[var(--gold)]">Auto-linked</span></div>
+                        <div class="flex justify-between"><span class="text-white">Identity</span><span class="text-[var(--gold)]">Black/Gold 007</span></div>
+                        <div class="flex justify-between"><span class="text-white">Focus</span><span class="text-[var(--gold)]">Africa-first</span></div>
+                    </div>
+                    <div class="mt-6 border-t border-[rgba(250,204,21,0.1)] pt-4 text-sm text-[var(--muted)]">Live sync with amdsolutions007 GitHub; titles auto-map to repo slugs.</div>
                 </div>
-                <a href="https://github.com/amdsolutions007/Bank-Statement-Parser" target="_blank"
-                   class="inline-flex items-center text-purple-600 font-semibold hover:text-purple-800">
-                    View on GitHub <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
+            </section>
 
-            <!-- Project 14: CBN-Compliance-Copilot -->
-            <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
-                <div class="text-5xl mb-4">⚖️</div>
-                <h3 class="text-2xl font-bold mb-3">CBN-Compliance-Copilot</h3>
-                <p class="text-gray-600 mb-6">
-                    Automated CBN compliance checking for Nigerian Fintechs. The Regulatory AI that keeps you compliant with Central Bank guidelines.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-6">
-                    <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-semibold">Python</span>
-                    <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold">Compliance AI</span>
-                    <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-semibold">RegTech</span>
+            <section id="featured" class="py-10">
+                <div class="flex items-center justify-between mb-6">
+                    <div>
+                        <p class="text-xs uppercase tracking-[0.25em] text-[var(--gold)]">Featured</p>
+                        <h3 class="text-2xl font-semibold text-white">Core Signals</h3>
+                    </div>
+                    <a class="link text-sm" href="https://github.com/amdsolutions007?tab=repositories" target="_blank" rel="noreferrer">Full repo index →</a>
                 </div>
-                <a href="https://github.com/amdsolutions007/CBN-Compliance-Copilot" target="_blank"
-                   class="inline-flex items-center text-purple-600 font-semibold hover:text-purple-800">
-                    View on GitHub <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
-
-            <!-- Project 15: NaijaStack-AI -->
-            <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
-                <div class="text-5xl mb-4">🇳🇬</div>
-                <h3 class="text-2xl font-bold mb-3">NaijaStack-AI</h3>
-                <p class="text-gray-600 mb-6">
-                    The Ultimate Nigerian SaaS Starter Kit. Next.js + Paystack + AI pre-configured for Nigerian developers building global products.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-6">
-                    <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-semibold">Next.js</span>
-                    <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold">TypeScript</span>
-                    <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-semibold">Paystack</span>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="grid-card glass rounded-2xl p-6">
+                        <div class="text-3xl mb-3">🗺️</div>
+                        <h4 class="text-xl font-semibold text-white mb-2">Address-Intel</h4>
+                        <p class="text-[var(--muted)] mb-4">AI parser for Nigerian addresses; converts "behind the yellow shop" into validated shipping coordinates.</p>
+                        <div class="flex gap-2 flex-wrap mb-4 text-xs">
+                            <span class="pill px-2 py-1 rounded-full">Python</span><span class="pill px-2 py-1 rounded-full">NLP</span><span class="pill px-2 py-1 rounded-full">Geospatial</span>
+                        </div>
+                        <a class="link font-semibold" href="https://github.com/amdsolutions007/Address-Intel" target="_blank" rel="noreferrer">View repo →</a>
+                    </div>
+                    <div class="grid-card glass rounded-2xl p-6">
+                        <div class="text-3xl mb-3">🔍</div>
+                        <h4 class="text-xl font-semibold text-white mb-2">Bank-Statement-Parser</h4>
+                        <p class="text-[var(--muted)] mb-4">OCR + AI extraction for Nigerian bank statements with validation and structured export.</p>
+                        <div class="flex gap-2 flex-wrap mb-4 text-xs">
+                            <span class="pill px-2 py-1 rounded-full">Python</span><span class="pill px-2 py-1 rounded-full">PDF</span><span class="pill px-2 py-1 rounded-full">Fintech</span>
+                        </div>
+                        <a class="link font-semibold" href="https://github.com/amdsolutions007/Bank-Statement-Parser" target="_blank" rel="noreferrer">View repo →</a>
+                    </div>
+                    <div class="grid-card glass rounded-2xl p-6">
+                        <div class="text-3xl mb-3">⚖️</div>
+                        <h4 class="text-xl font-semibold text-white mb-2">CBN-Compliance-Copilot</h4>
+                        <p class="text-[var(--muted)] mb-4">RegTech assistant enforcing CBN guidelines for fintechs with automated checks.</p>
+                        <div class="flex gap-2 flex-wrap mb-4 text-xs">
+                            <span class="pill px-2 py-1 rounded-full">Python</span><span class="pill px-2 py-1 rounded-full">Compliance</span><span class="pill px-2 py-1 rounded-full">AI</span>
+                        </div>
+                        <a class="link font-semibold" href="https://github.com/amdsolutions007/CBN-Compliance-Copilot" target="_blank" rel="noreferrer">View repo →</a>
+                    </div>
+                    <div class="grid-card glass rounded-2xl p-6">
+                        <div class="text-3xl mb-3">💹</div>
+                        <h4 class="text-xl font-semibold text-white mb-2">Naira-AI-Crypto-Tracker</h4>
+                        <p class="text-[var(--muted)] mb-4">Live Binance + Telegram signals for USDT/NGN with AI commentary.</p>
+                        <div class="flex gap-2 flex-wrap mb-4 text-xs">
+                            <span class="pill px-2 py-1 rounded-full">Python</span><span class="pill px-2 py-1 rounded-full">Realtime</span><span class="pill px-2 py-1 rounded-full">Fintech</span>
+                        </div>
+                        <a class="link font-semibold" href="https://github.com/amdsolutions007/Naira-AI-Crypto-Tracker" target="_blank" rel="noreferrer">View repo →</a>
+                    </div>
                 </div>
-                <a href="https://github.com/amdsolutions007/NaijaStack-AI" target="_blank"
-                   class="inline-flex items-center text-purple-600 font-semibold hover:text-purple-800">
-                    View on GitHub <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
+            </section>
 
-            <!-- Project 16: Little Drop 💧 Mighty Ocean -->
-            <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
-                <div class="text-5xl mb-4">📚</div>
-                <h3 class="text-2xl font-bold mb-3">Little Drop 💧 Mighty Ocean</h3>
-                <p class="text-gray-600 mb-6">
-                    Financial literacy ebook and audiobook teaching Nigerians wealth-building through consistent small savings. Built with AI voice generation.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-6">
-                    <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-semibold">OpenAI TTS</span>
-                    <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold">Content Creation</span>
-                    <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-semibold">Education</span>
+            <section class="py-10">
+                <div class="flex items-center justify-between mb-6">
+                    <div>
+                        <p class="text-xs uppercase tracking-[0.25em] text-[var(--gold)]">Open Source Arsenal</p>
+                        <h3 class="text-2xl font-semibold text-white">Community-grade Launchers</h3>
+                    </div>
                 </div>
-                <a href="https://www.amdsolutions007.com" target="_blank"
-                   class="inline-flex items-center text-purple-600 font-semibold hover:text-purple-800">
-                    Learn More <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
-
-            <!-- Project 17: RiseTogether NG -->
-            <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
-                <div class="text-5xl mb-4">🤝</div>
-                <h3 class="text-2xl font-bold mb-3">RiseTogether NG</h3>
-                <p class="text-gray-600 mb-6">
-                    999 Nigerian creatives backing 1 spotlight daily. Community platform for collaborative wealth building powered by WhatsApp automation.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-6">
-                    <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-semibold">WhatsApp Automation</span>
-                    <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold">Community Building</span>
-                    <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-semibold">AI</span>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="grid-card glass rounded-2xl p-5">
+                        <h4 class="text-lg font-semibold text-white mb-2">NaijaStack-AI</h4>
+                        <p class="text-sm text-[var(--muted)] mb-3">Nigeria-ready SaaS starter (Next.js + Paystack + AI).</p>
+                        <a class="link text-sm font-semibold" href="https://github.com/amdsolutions007/NaijaStack-AI" target="_blank" rel="noreferrer">Repo →</a>
+                    </div>
+                    <div class="grid-card glass rounded-2xl p-5">
+                        <h4 class="text-lg font-semibold text-white mb-2">Naija-Prop-Intel</h4>
+                        <p class="text-sm text-[var(--muted)] mb-3">Real estate intelligence across 52 Nigerian cities.</p>
+                        <a class="link text-sm font-semibold" href="https://github.com/amdsolutions007/Naija-Prop-Intel" target="_blank" rel="noreferrer">Repo →</a>
+                    </div>
+                    <div class="grid-card glass rounded-2xl p-5">
+                        <h4 class="text-lg font-semibold text-white mb-2">Naija-Voice-AI</h4>
+                        <p class="text-sm text-[var(--muted)] mb-3">Pidgin + local language voice assistant.</p>
+                        <a class="link text-sm font-semibold" href="https://github.com/amdsolutions007/Naija-Voice-AI" target="_blank" rel="noreferrer">Repo →</a>
+                    </div>
+                    <div class="grid-card glass rounded-2xl p-5">
+                        <h4 class="text-lg font-semibold text-white mb-2">AMD-Control-Center</h4>
+                        <p class="text-sm text-[var(--muted)] mb-3">CLI command bridge for all AMD projects.</p>
+                        <a class="link text-sm font-semibold" href="https://github.com/amdsolutions007/AMD-Control-Center" target="_blank" rel="noreferrer">Repo →</a>
+                    </div>
+                    <div class="grid-card glass rounded-2xl p-5">
+                        <h4 class="text-lg font-semibold text-white mb-2">Naija-Resume-Scanner</h4>
+                        <p class="text-sm text-[var(--muted)] mb-3">ATS-optimized CV analyzer for Nigerian job market.</p>
+                        <a class="link text-sm font-semibold" href="https://github.com/amdsolutions007/Naija-Resume-Scanner" target="_blank" rel="noreferrer">Repo →</a>
+                    </div>
+                    <div class="grid-card glass rounded-2xl p-5">
+                        <h4 class="text-lg font-semibold text-white mb-2">NaijaLaw-GPT</h4>
+                        <p class="text-sm text-[var(--muted)] mb-3">Legal AI for Nigerian statutes and precedents.</p>
+                        <a class="link text-sm font-semibold" href="https://github.com/amdsolutions007/NaijaLaw-GPT" target="_blank" rel="noreferrer">Repo →</a>
+                    </div>
+                    <div class="grid-card glass rounded-2xl p-5">
+                        <h4 class="text-lg font-semibold text-white mb-2">AMD-Global-Intel</h4>
+                        <p class="text-sm text-[var(--muted)] mb-3">Automated tech intel aggregator.</p>
+                        <a class="link text-sm font-semibold" href="https://github.com/amdsolutions007/AMD-Global-Intel" target="_blank" rel="noreferrer">Repo →</a>
+                    </div>
+                    <div class="grid-card glass rounded-2xl p-5">
+                        <h4 class="text-lg font-semibold text-white mb-2">AMD-ML-Predictor</h4>
+                        <p class="text-sm text-[var(--muted)] mb-3">Feature store and inference helpers.</p>
+                        <a class="link text-sm font-semibold" href="https://github.com/amdsolutions007/AMD-ML-Predictor" target="_blank" rel="noreferrer">Repo →</a>
+                    </div>
+                    <div class="grid-card glass rounded-2xl p-5">
+                        <h4 class="text-lg font-semibold text-white mb-2">AMD-Activity-Booster</h4>
+                        <p class="text-sm text-[var(--muted)] mb-3">GitHub activity automation and visualizations.</p>
+                        <a class="link text-sm font-semibold" href="https://github.com/amdsolutions007/amd-activity-booster" target="_blank" rel="noreferrer">Repo →</a>
+                    </div>
                 </div>
-                <a href="https://www.amdsolutions007.com" target="_blank"
-                   class="inline-flex items-center text-purple-600 font-semibold hover:text-purple-800">
-                    Join Community <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
+            </section>
 
-    <section class="container mx-auto px-6 py-20 text-center">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-5xl md:text-6xl font-black mb-6">
-                Building Intelligence for the
-                <span class="gradient-text">African Ecosystem</span>
-            </h2>
-            <p class="text-xl text-gray-600 mb-8">
-                Leveraging AI, automation, and real-time data to solve African challenges. 
-                From crypto tracking to GitHub automation, we ship products that matter.
-            </p>
-            <div class="flex flex-wrap justify-center gap-4 mb-8">
-                <span class="px-4 py-2 bg-purple-100 text-purple-700 rounded-full font-semibold">🇳🇬 Nigerian Focus</span>
-                <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-full font-semibold">🤖 AI-Powered</span>
-                <span class="px-4 py-2 bg-green-100 text-green-700 rounded-full font-semibold">🚀 Open Source</span>
-            </div>
-            <a href="#projects" class="inline-block px-8 py-4 gradient-bg text-white font-bold rounded-lg glow hover:opacity-90 transition">
-                View Projects
-            </a>
-        </div>
-    </section>
-
-    <!-- Projects Grid -->
-    <section id="projects" class="container mx-auto px-6 py-20">
-        <div class="text-center mb-16">
-            <h2 class="text-4xl font-bold mb-4">Featured Projects</h2>
-            <p class="text-gray-600 text-lg">Built with ❤️ for the African tech ecosystem</p>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <!-- Project 1: Naija-Prop-Intel -->
-            <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
-                <div class="text-5xl mb-4">🏘️</div>
-                <h3 class="text-2xl font-bold mb-3">Naija-Prop-Intel</h3>
-                <p class="text-gray-600 mb-6">
-                    AI Real Estate Super-App. 52 Nigerian cities with flood risk analysis, ROI calculator, 
-                    agent network, and satellite mapping. Award-ready intelligence platform.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-6">
-                    <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">Python</span>
-                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Google Maps</span>
-                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">AI Analysis</span>
+            <section class="py-10">
+                <div class="flex items-center justify-between mb-6">
+                    <div>
+                        <p class="text-xs uppercase tracking-[0.25em] text-[var(--gold)]">Enterprise Systems</p>
+                        <h3 class="text-2xl font-semibold text-white">Mission-critical Stack</h3>
+                    </div>
                 </div>
-                <a href="https://github.com/amdsolutions007/Naija-Prop-Intel" target="_blank"
-                   class="inline-flex items-center text-purple-600 font-semibold hover:text-purple-800">
-                    View on GitHub <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
-
-            <!-- Project 2: Naija-Voice-AI -->
-            <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
-                <div class="text-5xl mb-4">🎙️</div>
-                <h3 class="text-2xl font-bold mb-3">Naija-Voice-AI</h3>
-                <p class="text-gray-600 mb-6">
-                    Nigerian Pidgin Voice Assistant. Speech recognition for 130M speakers with cultural 
-                    intelligence, market inquiries, and local language support.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-6">
-                    <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">Python</span>
-                    <span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm">Speech API</span>
-                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">NLP</span>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="grid-card glass rounded-2xl p-6">
+                        <h4 class="text-lg font-semibold text-white mb-2">AMD-DB-Manager</h4>
+                        <p class="text-sm text-[var(--muted)] mb-3">Centralized database orchestration with backups and observability.</p>
+                        <a class="link text-sm font-semibold" href="https://github.com/amdsolutions007/AMD-DB-Manager" target="_blank" rel="noreferrer">Repo →</a>
+                    </div>
+                    <div class="grid-card glass rounded-2xl p-6">
+                        <h4 class="text-lg font-semibold text-white mb-2">AMD-API-Nexus</h4>
+                        <p class="text-sm text-[var(--muted)] mb-3">Unified API gateway for AMD services.</p>
+                        <a class="link text-sm font-semibold" href="https://github.com/amdsolutions007/AMD-API-Nexus" target="_blank" rel="noreferrer">Repo →</a>
+                    </div>
+                    <div class="grid-card glass rounded-2xl p-6">
+                        <h4 class="text-lg font-semibold text-white mb-2">AMD-Data-Engine</h4>
+                        <p class="text-sm text-[var(--muted)] mb-3">ETL and feature pipelines for analytics workloads.</p>
+                        <a class="link text-sm font-semibold" href="https://github.com/amdsolutions007/AMD-Data-Engine" target="_blank" rel="noreferrer">Repo →</a>
+                    </div>
+                    <div class="grid-card glass rounded-2xl p-6">
+                        <h4 class="text-lg font-semibold text-white mb-2">AMD-Alert-System</h4>
+                        <p class="text-sm text-[var(--muted)] mb-3">Operational alerting across channels with playbooks.</p>
+                        <a class="link text-sm font-semibold" href="https://github.com/amdsolutions007/AMD-Alert-System" target="_blank" rel="noreferrer">Repo →</a>
+                    </div>
+                    <div class="grid-card glass rounded-2xl p-6">
+                        <h4 class="text-lg font-semibold text-white mb-2">SkyCap AI</h4>
+                        <p class="text-sm text-[var(--muted)] mb-3">Investor copilot and deal memo automation.</p>
+                        <a class="link text-sm font-semibold" href="https://github.com/amdsolutions007/SkyCap-AI" target="_blank" rel="noreferrer">Repo →</a>
+                    </div>
+                    <div class="grid-card glass rounded-2xl p-6">
+                        <h4 class="text-lg font-semibold text-white mb-2">Shine AI</h4>
+                        <p class="text-sm text-[var(--muted)] mb-3">Personal brand and content automation suite.</p>
+                        <a class="link text-sm font-semibold" href="https://github.com/amdsolutions007/Shine-AI" target="_blank" rel="noreferrer">Repo →</a>
+                    </div>
+                    <div class="grid-card glass rounded-2xl p-6">
+                        <h4 class="text-lg font-semibold text-white mb-2">NaijaBiz Assist</h4>
+                        <p class="text-sm text-[var(--muted)] mb-3">SMB-focused automation across WhatsApp and web.</p>
+                        <a class="link text-sm font-semibold" href="https://github.com/amdsolutions007/NaijaBiz-Assist" target="_blank" rel="noreferrer">Repo →</a>
+                    </div>
+                    <div class="grid-card glass rounded-2xl p-6">
+                        <h4 class="text-lg font-semibold text-white mb-2">Japa Readiness Calculator</h4>
+                        <p class="text-sm text-[var(--muted)] mb-3">Migration readiness modeling with budget calculators.</p>
+                        <a class="link text-sm font-semibold" href="https://github.com/amdsolutions007/Japa-Readiness-Calculator" target="_blank" rel="noreferrer">Repo →</a>
+                    </div>
                 </div>
-                <a href="https://github.com/amdsolutions007/Naija-Voice-AI" target="_blank"
-                   class="inline-flex items-center text-purple-600 font-semibold hover:text-purple-800">
-                    View on GitHub <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
+            </section>
 
-            <!-- Project 3: AMD-Control-Center -->
-            <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
-                <div class="text-5xl mb-4">🎛️</div>
-                <h3 class="text-2xl font-bold mb-3">AMD-Control-Center</h3>
-                <p class="text-gray-600 mb-6">
-                    Centralized CLI Dashboard. Manage all AMD projects from one terminal with 
-                    smart navigation, git integration, and project analytics.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-6">
-                    <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">Python</span>
-                    <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">CLI</span>
-                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">DevOps</span>
+            <section class="py-10">
+                <div class="glass rounded-2xl p-6 md:p-8 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+                    <div>
+                        <p class="text-xs uppercase tracking-[0.25em] text-[var(--gold)] mb-2">Deploying next</p>
+                        <h4 class="text-2xl font-semibold text-white mb-3">Need a custom AI system for Africa?</h4>
+                        <p class="text-sm text-[var(--muted)]">Tell us your sector, data sources, and compliance needs. We respond with an execution plan.</p>
+                    </div>
+                    <a class="cta px-5 py-3 rounded-lg font-semibold inline-flex items-center" href="mailto:hello@amdsolutions007.com">Open Brief →</a>
                 </div>
-                <a href="https://github.com/amdsolutions007/AMD-Control-Center" target="_blank"
-                   class="inline-flex items-center text-purple-600 font-semibold hover:text-purple-800">
-                    View on GitHub <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
+            </section>
+        </main>
 
-            <!-- Project 4: Naija-Resume-Scanner -->
-            <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
-                <div class="text-5xl mb-4">📄</div>
-                <h3 class="text-2xl font-bold mb-3">Naija-Resume-Scanner</h3>
-                <p class="text-gray-600 mb-6">
-                    ATS Resume Optimizer for Nigerian job seekers. Fix 70% ATS rejection rate with 
-                    AI-powered formatting, keyword optimization, and job market intelligence.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-6">
-                    <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">Python</span>
-                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">NLP</span>
-                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">PDF Parser</span>
+        <footer class="border-t border-[rgba(250,204,21,0.08)] bg-[rgba(10,10,12,0.7)] backdrop-blur">
+            <div class="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row md:items-center md:justify-between gap-3 text-sm text-[var(--muted)]">
+                <span>© 2024 AMD Solutions 007. Synced with GitHub & Vercel.</span>
+                <div class="flex gap-4">
+                    <a class="link" href="https://www.amdsolutions007.com" target="_blank" rel="noreferrer">amdsolutions007.com</a>
+                    <a class="link" href="https://github.com/amdsolutions007" target="_blank" rel="noreferrer">GitHub</a>
                 </div>
-                <a href="https://github.com/amdsolutions007/Naija-Resume-Scanner" target="_blank"
-                   class="inline-flex items-center text-purple-600 font-semibold hover:text-purple-800">
-                    View on GitHub <i class="fas fa-arrow-right ml-2"></i>
-                </a>
             </div>
-
-            <!-- Project 5: NaijaLaw-GPT -->
-            <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
-                <div class="text-5xl mb-4">⚖️</div>
-                <h3 class="text-2xl font-bold mb-3">NaijaLaw-GPT</h3>
-                <p class="text-gray-600 mb-6">
-                    Legal AI Assistant for Nigerian law. Access court precedents, legal research, 
-                    case summaries, and constitutional queries with AI-powered intelligence.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-6">
-                    <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">Python</span>
-                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">GPT-4</span>
-                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Legal Tech</span>
-                </div>
-                <a href="https://github.com/amdsolutions007/NaijaLaw-GPT" target="_blank"
-                   class="inline-flex items-center text-purple-600 font-semibold hover:text-purple-800">
-                    View on GitHub <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
-
-            <!-- Project 6: Naija-Rent-Estimator -->
-            <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
-                <div class="text-5xl mb-4">🏠</div>
-                <h3 class="text-2xl font-bold mb-3">Naija-Rent-Estimator</h3>
-                <p class="text-gray-600 mb-6">
-                    Property Rent Calculator with Lagos market intelligence. Estimate fair rent prices 
-                    based on location, property type, and neighborhood data.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-6">
-                    <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">Python</span>
-                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Data Analysis</span>
-                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Real Estate</span>
-                </div>
-                <a href="https://github.com/amdsolutions007/Naija-Rent-Estimator" target="_blank"
-                   class="inline-flex items-center text-purple-600 font-semibold hover:text-purple-800">
-                    View on GitHub <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
-
-            <!-- Project 7: Naira-AI-Crypto-Tracker -->
-            <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
-                <div class="text-5xl mb-4">💹</div>
-                <h3 class="text-2xl font-bold mb-3">Naira-AI-Crypto-Tracker</h3>
-                <p class="text-gray-600 mb-6">
-                    Real-time AI financial analysis for Nigeria. Track USDT/NGN rates with live Binance data, 
-                    AI-powered trading signals, and instant Telegram alerts.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-6">
-                    <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">Python</span>
-                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Binance API</span>
-                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Telegram</span>
-                </div>
-                <a href="https://github.com/amdsolutions007/Naira-AI-Crypto-Tracker" target="_blank"
-                   class="inline-flex items-center text-purple-600 font-semibold hover:text-purple-800">
-                    View on GitHub <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
-
-            <!-- Project 8: AMD-Activity-Booster -->
-            <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
-                <div class="text-5xl mb-4">📊</div>
-                <h3 class="text-2xl font-bold mb-3">AMD-Activity-Booster</h3>
-                <p class="text-gray-600 mb-6">
-                    Automated GitHub activity visualization. Keep your contribution graphs green with 
-                    daily AI quotes and activity logs. Published on GitHub Marketplace.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-6">
-                    <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">Python</span>
-                    <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">GitHub Actions</span>
-                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Automation</span>
-                </div>
-                <a href="https://github.com/amdsolutions007/amd-activity-booster" target="_blank"
-                   class="inline-flex items-center text-purple-600 font-semibold hover:text-purple-800">
-                    View on GitHub <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
-
-            <!-- Project 9: AMD-Global-Intelligence -->
-            <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
-                <div class="text-5xl mb-4">🌐</div>
-                <h3 class="text-2xl font-bold mb-3">AMD-Global-Intelligence</h3>
-                <p class="text-gray-600 mb-6">
-                    AI-powered tech news aggregation. Automated scraping from Hacker News, ArXiv, and TechCrunch. 
-                    Daily updates on cutting-edge AI developments.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-6">
-                    <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">Python</span>
-                    <span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm">BeautifulSoup</span>
-                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">RSS</span>
-                </div>
-                <a href="https://github.com/amdsolutions007/AMD-Global-Intelligence" target="_blank"
-                   class="inline-flex items-center text-purple-600 font-semibold hover:text-purple-800">
-                    View on GitHub <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
-
-            <!-- Project 10: AMD-Content-AI -->
-            <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
-                <div class="text-5xl mb-4">✍️</div>
-                <h3 class="text-2xl font-bold mb-3">AMD-Content-AI</h3>
-                <p class="text-gray-600 mb-6">
-                    AI Content Generation Engine. Create blog posts, social media content, and marketing 
-                    copy with advanced language models and Nigerian context awareness.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-6">
-                    <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">Python</span>
-                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">GPT</span>
-                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Content Gen</span>
-                </div>
-                <a href="https://github.com/amdsolutions007/AMD-Content-AI" target="_blank"
-                   class="inline-flex items-center text-purple-600 font-semibold hover:text-purple-800">
-                    View on GitHub <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
+        </footer>
+    </div>
+</body>
+</html>
 
             <!-- Project 11: AMD-ML-Predictor -->
             <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
